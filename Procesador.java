@@ -9,7 +9,7 @@ public class Procesador {
         this.frecuenciaEnGhz = frecuenciaEnGhz;
     }
     
-    public String getMaca(){
+    public String getMarca(){
         return marca;
     }
     
@@ -24,5 +24,9 @@ public class Procesador {
     public void setFrecuenciaEnGhz (double frecuenciaEnGhz){
         this.frecuenciaEnGhz = frecuenciaEnGhz;
     }
-    
+
+    public void imprimirDetalles() {
+        System.out.println("Marca: " + marca + "\n" +
+                "Frecuencia: " + frecuenciaEnGhz + "GHz");
+    }
 }
