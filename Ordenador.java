@@ -11,4 +11,16 @@ public class Ordenador {
         this.estaEncendido = estaEncendido;
         this.procesador = procesador;
     }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public void setEstaEncendido(boolean estaEncendido) {
+        this.estaEncendido = estaEncendido;
+    }
+
+    public void setProcesador(Procesador procesador) {
+        this.procesador = procesador;
+    }
 }
