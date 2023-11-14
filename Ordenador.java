@@ -2,7 +2,7 @@ public class Ordenador {
     // Atributo para la marca
     private String marca;
     // Atributo para frecuenciaEnGhz
-    private boolean estadoEncendido;
+    private boolean estaEncendido;
     // Atributo para procesador
     private Procesador procesador;
 
@@ -22,5 +22,23 @@ public class Ordenador {
 
     public String getProcesador(){
         return procesador;
+    }
+    
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public void setEstaEncendido(boolean estaEncendido) {
+        this.estaEncendido = estaEncendido;
+    }
+
+    public void setProcesador(Procesador procesador) {
+        this.procesador = procesador;
+    }
+    public void imprimirDetalles() {
+        System.out.println("Marca: " + marca + "\n" +
+                "¿Está encendido?: " + (estaEncendido? "Sí": "No") + "\n" +
+                "Detalles procesador: \n" +
+                procesador.getDetalles());
     }
 }
