@@ -24,9 +24,11 @@ public class Procesador {
     public void setFrecuenciaEnGhz (double frecuenciaEnGhz){
         this.frecuenciaEnGhz = frecuenciaEnGhz;
     }
-
+    public String getDetalles() {
+        return "Marca: " + marca + "\n" +
+                "Frecuencia: " + frecuenciaEnGhz + "GHz";
+    }
     public void imprimirDetalles() {
-        System.out.println("Marca: " + marca + "\n" +
-                "Frecuencia: " + frecuenciaEnGhz + "GHz");
+        System.out.println(getDetalles());
     }
 }

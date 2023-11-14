@@ -23,4 +23,10 @@ public class Ordenador {
     public void setProcesador(Procesador procesador) {
         this.procesador = procesador;
     }
+    public void imprimirDetalles() {
+        System.out.println("Marca: " + marca + "\n" +
+                "¿Está encendido?: " + (estaEncendido? "Sí": "No") + "\n" +
+                "Detalles procesador: \n" +
+                procesador.getDetalles());
+    }
 }
